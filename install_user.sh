@@ -46,7 +46,7 @@ done
 DOTFILES="/home/$(whoami)/dotfiles"
 if [ ! -d "$DOTFILES" ]; then
     # Clone dotfiles.git
-    git clone https://github.com/alexpwns/dotfiles.git \
+    git clone https://github.com/ajkingio/dotfiles.git \
     "$DOTFILES" >/dev/null
 fi
 
