@@ -5,7 +5,7 @@ name=$(cat /tmp/user_name)
 apps_path="/tmp/apps.csv"
 
 # Download apps.csv
-curl https://raw.githubusercontent.com/ajkingio/arch_installer/master/apps.csv > $apps_path
+curl https://raw.githubusercontent.com/ajkingio/arch_installer/main/apps.csv > $apps_path
 
 dialog --title "Welcome!" \
 --msgbox "Welcome to the install script for your apps and dotfiles!" \
@@ -76,7 +76,7 @@ done
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
 
 # Downlosd install_user.sh
-curl https://raw.githubusercontent.com/ajkingio/arch_installer/master/install_user.sh > /tmp/install_user.sh;
+curl https://raw.githubusercontent.com/ajkingio/arch_installer/main/install_user.sh > /tmp/install_user.sh;
 
 # Switch user and run the final script
 sudo -u "$name" sh /tmp/install_user.sh
